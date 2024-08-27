@@ -26,7 +26,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            Scaffold() { innerPadding ->
+            Scaffold { innerPadding ->
                 SampleListTheme {
                     DisplaySales(modifier = Modifier.padding(innerPadding))
                 }
